@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+        <div id="display-wrapper" class="top-20">
+        </div>
+
+        <div class="row top-20">
+            <label class="form">Contract Address</label> <input type="text" id="contract-address">
+        </div>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="authorize-contract">Authorize Contract</btn>
+        </div>
+
+        <div class="row top-20">
+            <label class="form">Flight Name</label> <input type="text" id="flight-name">
+            <label class="form">Airline Address</label> <input type="text" id="fetch-airline-address">
+        </div>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+            <btn class="btn btn-primary" id="submit-airline" style="margin-left: 10px;">Submit Airline</btn>
+        </div>
+
+        <div id="display-wrapper-airline" class="top-20">
+        </div> 
+        <div class="row top-20">
+            <label class="form">Actions over Airline</label>
+            <input type="text" id="airline-address" style="width: 400px;" placeholder="Airline Address">
+        </div>
+        <div class="row top-20"></div>
+            <btn class="btn btn-primary" id="fund-airlines">Fund</btn>
+            <btn class="btn btn-primary" id="vote-airlines" style="margin-left: 10px;">Vote</btn>
+        </div>
+
+        <div class="row top-20">
+            <label class="form">Register flight</label>
+            <input type="text" id="airline-flight" style="width: 400px;" placeholder="Airline flight">
+            <input type="text" id="airline-departure" style="width: 400px;" placeholder="Airline departure">
+            <input type="text" id="airline-destination" style="width: 400px;" placeholder="Airline destination">
+            <input type="text" id="airline-timestamp" style="width: 400px;" placeholder="Airline timestamp">
+        </div>
+        <div class="row top-20"></div>
+            <btn class="btn btn-primary" id="register-flight">Register</btn>
+        </div>
+
+        <div class="row top-20">
+            <label class="form">Buy Insurance</label>
+            <input type="text" id="insurance-flight" style="width: 400px;" placeholder="Insurance Flight">
+            <input type="text" id="insurance-value" style="width: 400px;" placeholder="Insurance value">
+        </div>
+        <div class="row top-20"></div>
+            <btn class="btn btn-primary" id="buy-insurance">Register</btn>
+        </div>
+
+        <div id="display-wrapper-passenger-detail" class="top-20">
+        </div>
+        <div class="row top-20">
+            <label class="form">Check Balance</label>
+            <input type="text" id="passanger-address" placeholder="Passenger Address" style="width: 400px;">
+            <btn class="btn btn-primary" id="check-balance">Check Credit Pending to Withdraw</btn>
+            <btn class="btn btn-primary" id="withdraw-balance" style="margin-left: 10px;">Withdraw</btn>
+        </div>
+       
+    </main>
+
+</body>
+
+</html>
